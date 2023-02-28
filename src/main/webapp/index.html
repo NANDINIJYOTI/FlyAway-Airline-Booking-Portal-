@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button {
+  background-color: lightBlue;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width:32%;
+  opacity: 0.9;
+  font-size:20px;
+}
+
+button:hover {
+  opacity:1;
+}
+body {
+  background-image: url('2wel.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+   background-size: cover;
+  
+}
+marquee{
+font-size:50px;
+}
+input[type="text"],input[type="submit"],input[type="Date"],select
+{
+    font-size:20px;
+}
+label{
+ font-size:24px;
+}
+
+</style>
+
+<meta charset="ISO-8859-1">
+<title> Welcome to Airway</title>
+
+<body >
+<h1 style="Color:red"><b></b>WELCOME    TO    FLYAWAY<b></b></h1>
+<marquee class="marq"
+             bgcolor="Pink" 
+             direction="left" 
+             loop="">
+        This is an AIRLINE Booking Portal
+    </marquee>
+
+
+<h2 style="Color:blue;text-align:center"><b></b>Developer Name:JYOTI NANDINI 
+&nbsp;&nbsp;<br>Developer Email: jyo.nandi.in@gmail.com
+&nbsp;&nbsp;<br>SimpliLearn Full Stack Development Course Phase 2<b></b></h2>
+<button type="button" onclick="location.href='welcome.html'">Home</button>
+<button type="button" onclick="location.href='SignInFront.jsp'">Login</button>
+<button type="button" onclick="location.href='index.html'">Search Flight</button>
+	
+<br><br><br><br>          
+
+
+   <form action="FlightSearch.jsp">
+	
+	
+		<label>Source</label>
+	    <select name="src" id="src" placeholder="enter book price">
+	      <option value="Bangaluru">Bangaluru</option>
+          <option value="Belgavi">Belgavi</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Hyderabad">Hyderabad</option>
+       </select>
+		<label>Destination</label>
+		<select name="des" id="des">
+		
+	    <option value="Bangaluru">Bangaluru</option>
+          <option value="Belgavi">Belgavi</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Hyderabad">Hyderabad</option>		
+
+</select>
+	
+		<label>Date</label>
+		<input type=Date name="date" placeholder="enter book price"> 
+		
+		<input type="submit" value="Search Flight">
+		
+	</form>
+
+
+</body>
+</html>
